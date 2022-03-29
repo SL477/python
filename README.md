@@ -23,3 +23,8 @@
 - [python-Levenshtein](https://pypi.org/project/python-Levenshtein/)
 - [OWL2Vec*](https://github.com/KRR-Oxford/OWL2Vec-Star)
 
+### VENV
+
+Create environment using python -m venv SWTKGPython
+
+Activate using SWTKGPython\Scripts\activate.bat
