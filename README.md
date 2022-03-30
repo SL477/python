@@ -1,4 +1,4 @@
-### Example codes in Python for the [Semantic Web Technologies and Knowledge Graphs](https://github.com/turing-knowledge-graphs/teaching/tree/main/city) module
+# Example codes in Python for the [Semantic Web Technologies and Knowledge Graphs](https://github.com/turing-knowledge-graphs/teaching/tree/main/city) module
 
 - **Laboratory 1**: Set up.
 - **Laboratory 2**: Creating simple RDF-based Knowledge Graphs.
@@ -11,7 +11,8 @@
 - **Laboratory 9**: Ontology Embeddings with OWL2Vec*
 - **Laboratory 10**: GraphDB, an RDF Database for Knowledge Graphs
 
-### Dependencies
+## Dependencies
+
 - [Python 3](https://www.python.org/)
 - [Owlready2](https://pypi.org/project/Owlready2/)
 - [SPARQLWrapper](https://pypi.org/project/SPARQLWrapper/)
@@ -27,4 +28,5 @@
 
 Create environment using python -m venv SWTKGPython
 
-Activate using SWTKGPython\Scripts\activate.bat
+Activate using
+> SWTKGPython\Scripts\activate.bat

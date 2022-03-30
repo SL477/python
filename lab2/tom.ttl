@@ -1,0 +1,17 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix me: <http://link477.com> .
+
+<https://link477.com/foaf.rdf#me> a foaf:Person ;
+    foaf:depiction <https://link477.com/images/tom.jpg> ;
+    foaf:family_name "Fishwick" ;
+    foaf:givenname "Tom" ;
+    foaf:homepage <http://link477.com> ;
+    foaf:knows [ a foaf:Person ;
+            rdfs:seeAlso <file:///C:/src/SWTKGPython/lab2/ernesto_foaf.rdf> ;
+            foaf:mbox <mailto:ernesto.jimenez-ruiz@city.ac.uk> ;
+            foaf:name "Ernesto Jimenez-Ruiz"
+    ] ;
+    foaf:mbox <mailto:Thomas.Fishwick@city.ac.uk> ;
+    foaf:name "Thomas Fishwick" ;
+    foaf:title "Mr" .

@@ -44,9 +44,9 @@ def loadTriplesAndSaveToTargetFormat(file, source_format, target_format):
     print("Saving graph from " + source_format + " to " + target_format)
     g.serialize(destination=file + "."+target_format, format=target_format)
 
-
-#Load triples and query local graph
-loadTriplesAndSave()
-loadTriplesAndSaveToTargetFormat("ernesto_foaf.rdf", "xml", "ttl")
-loadTriplesAndSaveToTargetFormat("lab2_task3.1.ttl", "ttl", "ttl")
+if __name__ == "__main__":
+    # Load triples and query local graph
+    loadTriplesAndSave()
+    loadTriplesAndSaveToTargetFormat("ernesto_foaf.rdf", "xml", "ttl")
+    loadTriplesAndSaveToTargetFormat("lab2_task3.1.ttl", "ttl", "ttl")
 
