@@ -71,7 +71,7 @@ nobelprize_query = """
     """
 
 
-
-print("\nQuerying Nobel Prize Knowledge Graph (Female laureates):")
-queryRemoteGraph(nobelprize_endpoint, nobelprize_query)
+if __name__ == "__main__":
+    print("\nQuerying Nobel Prize Knowledge Graph (Female laureates):")
+    queryRemoteGraph(nobelprize_endpoint, nobelprize_query)
 
