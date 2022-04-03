@@ -2,3 +2,4 @@ requests
 rdflib
 SPARQLWrapper
 Owlready2
+owlrl

@@ -1,32 +1,28 @@
 
 from rdflib import Graph
-
 import owlrl
 
 
 def RDFSInference():
-    
+
     g = Graph()
-    
+
     g.parse("lab4.ttl", format="ttl")    
-    
+
     print("Loaded '" + str(len(g)) + "' triples.")
-    
-    #Performs RDFS reasoning
+
+    # Performs RDFS reasoning
     owlrl.DeductiveClosure(owlrl.RDFS_Semantics, axiomatic_triples=True, datatype_axioms=False).expand(g)
-    
-    
+
+
     print("After inference rules: '" + str(len(g)) + "' triples.")
-    
-    
-    #Check if entailments hold
+
+
+    # Check if entailments hold
     checkEntailments(g)
 
-    
     print("\nSaving extended graph")
     g.serialize(destination='lab4_inference.ttl', format='ttl')
-
-    
 
 
 def checkEntailments(g):
@@ -42,7 +38,6 @@ def checkEntailments(g):
     triple7 = "rdfs:range rdf:type rdfs:Resource ."
     triple8 = ":Mother rdfs:subClassOf :Person ."
     
-    
     checkEntailment(g, triple1)
     checkEntailment(g, triple2)
     checkEntailment(g, triple3)
@@ -51,7 +46,6 @@ def checkEntailments(g):
     checkEntailment(g, triple6)
     checkEntailment(g, triple7)
     checkEntailment(g, triple8)
-    
     
     
 def checkEntailment(g, triple):
@@ -63,7 +57,6 @@ def checkEntailment(g, triple):
     #Single row with one boolean vale
     for row in qres:
         print("Does '" + triple + "' holds? " + str(row))
-    
-    
-RDFSInference()
 
+if __name__ == "__main__":
+    RDFSInference()
