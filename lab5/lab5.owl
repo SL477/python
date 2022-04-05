@@ -1,0 +1,142 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/link4/ontologies/lab5#"
+     xml:base="http://www.semanticweb.org/link4/ontologies/lab5"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:city="http://www.example.org/university/london/city/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/link4/ontologies/lab5"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.example.org/university/london/city/teaches -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.org/university/london/city/teaches"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/name -->
+
+    <owl:DatatypeProperty rdf:about="http://xmlns.com/foaf/0.1/name"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.example.org/university/london/city/Lecturer -->
+
+    <owl:Class rdf:about="http://www.example.org/university/london/city/Lecturer">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.example.org/university/london/city/teaches"/>
+                        <owl:allValuesFrom rdf:resource="http://www.example.org/university/london/city/Module"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.example.org/university/london/city/teaches"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.example.org/university/london/city/Module"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/university/london/city/Module -->
+
+    <owl:Class rdf:about="http://www.example.org/university/london/city/Module"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Person -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://xmlns.com/foaf/0.1/name"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.example.org/university/london/city/ernesto -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/university/london/city/ernesto">
+        <rdf:type rdf:resource="http://www.example.org/university/london/city/Lecturer"/>
+        <city:teaches rdf:resource="http://www.example.org/university/london/city/inm713"/>
+        <foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ernesto Jimenez-Ruiz</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/university/london/city/inm373 -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/university/london/city/inm373">
+        <rdf:type rdf:resource="http://www.example.org/university/london/city/Module"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/university/london/city/inm713 -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/university/london/city/inm713">
+        <rdf:type rdf:resource="http://www.example.org/university/london/city/Module"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
