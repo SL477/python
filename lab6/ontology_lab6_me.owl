@@ -1,0 +1,268 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/link4/ontologies/2022/11/lab_6_me#"
+     xml:base="http://www.semanticweb.org/link4/ontologies/2022/11/lab_6_me"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/link4/ontologies/2022/11/lab_6_me"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/link4/ontologies/2022/11/lab_6_me#cityIsLocatedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/link4/ontologies/2022/11/lab_6_me#cityIsLocatedIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/link4/ontologies/2022/11/lab_6_me#isLocatedIn"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/link4/ontologies/2022/11/lab_6_me#hasAdminCapital -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/link4/ontologies/2022/11/lab_6_me#hasAdminCapital">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/link4/ontologies/2022/11/lab_6_me#hasCity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/link4/ontologies/2022/11/lab_6_me#hasCapital -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/link4/ontologies/2022/11/lab_6_me#hasCapital">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/link4/ontologies/2022/11/lab_6_me#hasCity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/link4/ontologies/2022/11/lab_6_me#hasCity -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/link4/ontologies/2022/11/lab_6_me#hasCity">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/link4/ontologies/2022/11/lab_6_me#isAdminCapitalOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/link4/ontologies/2022/11/lab_6_me#isAdminCapitalOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/link4/ontologies/2022/11/lab_6_me#cityIsLocatedIn"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/link4/ontologies/2022/11/lab_6_me#isCapitalOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/link4/ontologies/2022/11/lab_6_me#isCapitalOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/link4/ontologies/2022/11/lab_6_me#cityIsLocatedIn"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/link4/ontologies/2022/11/lab_6_me#isFirstLevelAdminCapitalOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/link4/ontologies/2022/11/lab_6_me#isFirstLevelAdminCapitalOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/link4/ontologies/2022/11/lab_6_me#isAdminCapitalOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/link4/ontologies/2022/11/lab_6_me#isLocatedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/link4/ontologies/2022/11/lab_6_me#isLocatedIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/link4/ontologies/2022/11/lab_6_me#isSecondLevelAdminCapitalOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/link4/ontologies/2022/11/lab_6_me#isSecondLevelAdminCapitalOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/link4/ontologies/2022/11/lab_6_me#isAdminCapitalOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/link4/ontologies/2022/11/lab_6_me#admin_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/link4/ontologies/2022/11/lab_6_me#admin_name">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/link4/ontologies/2022/11/lab_6_me#iso2 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/link4/ontologies/2022/11/lab_6_me#iso2">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/link4/ontologies/2022/11/lab_6_me#iso3 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/link4/ontologies/2022/11/lab_6_me#iso3">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/link4/ontologies/2022/11/lab_6_me#lat -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/link4/ontologies/2022/11/lab_6_me#lat">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/link4/ontologies/2022/11/lab_6_me#long -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/link4/ontologies/2022/11/lab_6_me#long">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/link4/ontologies/2022/11/lab_6_me#name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/link4/ontologies/2022/11/lab_6_me#name">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/link4/ontologies/2022/11/lab_6_me#name_ascii -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/link4/ontologies/2022/11/lab_6_me#name_ascii">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/link4/ontologies/2022/11/lab_6_me#population -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/link4/ontologies/2022/11/lab_6_me#population">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/link4/ontologies/2022/11/lab_6_me#AdminCapitalCity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/link4/ontologies/2022/11/lab_6_me#AdminCapitalCity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/link4/ontologies/2022/11/lab_6_me#City"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/link4/ontologies/2022/11/lab_6_me#CapitalCity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/link4/ontologies/2022/11/lab_6_me#CapitalCity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/link4/ontologies/2022/11/lab_6_me#City"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/link4/ontologies/2022/11/lab_6_me#isCapitalOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/link4/ontologies/2022/11/lab_6_me#Country"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/link4/ontologies/2022/11/lab_6_me#City -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/link4/ontologies/2022/11/lab_6_me#City">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/link4/ontologies/2022/11/lab_6_me#cityIsLocatedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/link4/ontologies/2022/11/lab_6_me#Country"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/link4/ontologies/2022/11/lab_6_me#Country -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/link4/ontologies/2022/11/lab_6_me#Country">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/link4/ontologies/2022/11/lab_6_me#hasCapital"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/link4/ontologies/2022/11/lab_6_me#City"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/link4/ontologies/2022/11/lab_6_me#FirstLevelAdminCapitalCity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/link4/ontologies/2022/11/lab_6_me#FirstLevelAdminCapitalCity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/link4/ontologies/2022/11/lab_6_me#AdminCapitalCity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/link4/ontologies/2022/11/lab_6_me#isFirstLevelAdminCapitalOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/link4/ontologies/2022/11/lab_6_me#Country"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/link4/ontologies/2022/11/lab_6_me#SecondLevelAdminCapitalCity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/link4/ontologies/2022/11/lab_6_me#SecondLevelAdminCapitalCity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/link4/ontologies/2022/11/lab_6_me#AdminCapitalCity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/link4/ontologies/2022/11/lab_6_me#isSecondLevelAdminCapitalOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/link4/ontologies/2022/11/lab_6_me#Country"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

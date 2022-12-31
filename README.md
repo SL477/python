@@ -30,3 +30,7 @@ Create environment using python -m venv SWTKGPython
 
 Activate using
 > SWTKGPython\Scripts\activate.bat
+
+### Teaching part
+
+[Teaching link](https://github.com/turing-knowledge-graphs/teaching/tree/main/city/2020-2021)
