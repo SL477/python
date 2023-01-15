@@ -9,6 +9,11 @@ rdflib = "*"
 sparqlwrapper = "*"
 owlready2 = "*"
 owlrl = "*"
+gensim = "*"
+scikit-learn = "*"
+numpy = "*"
+nltk = "*"
+matplotlib = "*"
 
 [dev-packages]
 
