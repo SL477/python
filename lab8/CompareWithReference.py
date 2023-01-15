@@ -40,5 +40,5 @@ def compareWithReference(reference_mappings_file, system_mappings_file):
     print("\tF-Score: " + str(f_score))
     
     
-    
-compareWithReference("anatomy-reference.ttl", "anatomy-example-system.ttl")
+if __name__ == '__main__':  
+    compareWithReference("anatomy-reference.ttl", "anatomy-example-system.ttl")

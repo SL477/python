@@ -43,18 +43,14 @@ def loadOntology(urionto):
         print("\t"+cls.name)  
         #Labels from RDFS label
         print("\t"+str(getRDFSLabelsForEntity(cls)))
-        
 
 
+if __name__ == '__main__':
+    # Load ontology from URI or local file
+    urionto="cmt.owl"
+    # urionto="ekaw.owl"
+    # urionto="confOf.owl"
+    # urionto="human.owl"
+    # urionto="mouse.owl"
 
-
-#Load ontology from URI or local file
-urionto="cmt.owl"
-#urionto="ekaw.owl"
-#urionto="confOf.owl"
-#urionto="human.owl"
-#urionto="mouse.owl"
-
-loadOntology(urionto)
-
-
+    loadOntology(urionto)
