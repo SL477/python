@@ -66,35 +66,32 @@ def queryGraphDBRepo(endpoint_url, query, attempts=3):
             return None
 
 
-
-##REPOSITORY URL AND SPARQL ENDPOINT
-graphdb_endpoint = "http://192.168.0.18:7200/repositories/Lab6_repository_automatic"
-
-
-#LOAD DATA
-path_to_data_file = "/home/ernesto/git/python-kg/lab6/worldcities-free-100-task4.ttl"
-path_to_onto_file = "/home/ernesto/git/python-kg/lab6/ontology_lab6.ttl"
-
-loadingData(graphdb_endpoint, path_to_onto_file)
-loadingData(graphdb_endpoint, path_to_data_file)
+if __name__ == '__main__':
+    # #REPOSITORY URL AND SPARQL ENDPOINT
+    # graphdb_endpoint = "http://192.168.0.18:7200/repositories/Lab6_repository_automatic"
+    graphdb_endpoint = 'http://localhost:7200/repositories/lab10'
 
 
+    #LOAD DATA
+    # path_to_data_file = "/home/ernesto/git/python-kg/lab6/worldcities-free-100-task4.ttl"
+    # path_to_onto_file = "/home/ernesto/git/python-kg/lab6/ontology_lab6.ttl"
 
-#QUERY DATA
-query_lab7_task31 = """
-        PREFIX lab6: <http://www.semanticweb.org/ernesto/inm713/lab6/>
-        SELECT DISTINCT ?country (COUNT(?city) AS ?num_cities) WHERE { 
-              ?country lab6:hasCity ?city .
-        }
-        GROUP BY ?country
-        ORDER BY DESC(?num_cities)
-        LIMIT 10
-        """
-
-
-print("\nQuerying GraphDB Endpoint:")
-queryGraphDBRepo(graphdb_endpoint, query_lab7_task31)
+    # loadingData(graphdb_endpoint, path_to_onto_file)
+    # loadingData(graphdb_endpoint, path_to_data_file)
 
 
 
+    # QUERY DATA
+    query_lab7_task31 = """
+            PREFIX lab6: <http://www.semanticweb.org/ernesto/inm713/lab6/>
+            SELECT DISTINCT ?country (COUNT(?city) AS ?num_cities) WHERE { 
+                ?country lab6:hasCity ?city .
+            }
+            GROUP BY ?country
+            ORDER BY DESC(?num_cities)
+            LIMIT 10
+            """
 
+
+    print("\nQuerying GraphDB Endpoint:")
+    queryGraphDBRepo(graphdb_endpoint, query_lab7_task31)
